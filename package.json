@@ -10,6 +10,7 @@
   },
   "description": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Deployment",
   "devDependencies": {
+    "axios": "^1.6.8",
     "babel-eslint": "^10.1.0",
     "eslint": "^9.2.0",
     "postcss": "^8.4.38",
@@ -21,9 +22,9 @@
   "license": "ISC",
   "name": "will-it-miss",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "npm run test && parcel build src/index.html",
     "dev": "parcel serve src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/*.mjs"
   },
   "version": "1.0.0"
 }

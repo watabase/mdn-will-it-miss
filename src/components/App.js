@@ -13,7 +13,6 @@ const fetchData = () =>
     `https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`
   ).then((res) => {
     const result = res.json();
-    console.log(result);
     return result;
   });
 
@@ -23,7 +22,6 @@ const App = () => {
 
   if (data.loading) {
     document.title = 'Counting potential earth HAZARDS…';
-    console.log(document.title);
     return (
       <p>
         Getting data from NASA right now to check whether something from space
