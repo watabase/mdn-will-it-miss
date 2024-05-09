@@ -8,7 +8,7 @@
     "react-async-hook": "^4.0.0",
     "react-dom": "^18.3.1"
   },
-  "description": "",
+  "description": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Deployment",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^9.2.0",
